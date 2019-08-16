@@ -1,7 +1,7 @@
 import "phaser";
 
 const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
-    key: 'MainMenu',
+    key: 'WelcomeScreen',
   };
 
 export class WelcomeScene extends Phaser.Scene {

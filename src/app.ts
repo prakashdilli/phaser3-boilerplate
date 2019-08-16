@@ -6,8 +6,8 @@ const config: Phaser.Types.Core.GameConfig = {
   width: window.innerWidth,
   height: window.innerHeight,
   parent: "game",
-  scene:scenes,
-  backgroundColor: "#18216D"
+  scene: scenes,
+  backgroundColor: "#f2f2f2"
 };
 
 export class Game extends Phaser.Game {
@@ -18,13 +18,3 @@ export class Game extends Phaser.Game {
 
 export const game = new Game(config);
 
-game.events.addListener('resize',() =>{
-    this.resizeTo(window.innerWidth,window.innerHeight);
-})
-
-/* window.onload = () => {
-  
-};
-window.addEventListener('resize', () => {
-    game.resize(window.innerWidth, window.innerHeight);
-  }); */

@@ -3,10 +3,13 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: {
-        app: './src/app.ts',
-        vendors: ['phaser']
-      },
+
+  mode: 'development',
+
+  entry: {
+    app: './src/app.ts',
+    vendors: ['phaser']
+  },
 
   module: {
     rules: [
@@ -19,13 +22,12 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   resolve: {
-    extensions: [ '.ts', '.tsx', '.js' ]
+    extensions: ['.ts', '.tsx', '.js']
   },
   output: {
     filename: 'app.bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  mode: 'development',
 
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
