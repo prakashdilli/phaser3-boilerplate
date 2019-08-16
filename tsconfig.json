@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "sourceMap": true,
+      "plugins": [
+        {
+          "name": "typescript-tslint-plugin",
+          "alwaysShowRuleFailuresAsWarnings": false,
+          "ignoreDefinitionFiles": false,
+        }
+      ],
+      "typeRoots": [
+           "./node_modules/@types", 
+           "./node_modules/phaser/types", 
+        ],
+        "types": [
+            "phaser"
+          ]
+    },
+    "include": [
+        "src/*"
+    ],
+  }
+  
