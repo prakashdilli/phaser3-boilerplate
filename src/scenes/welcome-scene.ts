@@ -13,15 +13,16 @@ export class WelcomeScene extends Phaser.Scene {
     }
   
     init(/*params: any*/): void {
-      this.title = 'Phaser3 Typescript BoilerPlate'
-    }
-  
-    preload(): void {
+      this.title = 'Phaser3 Typescript BoilerPlate';
       
     }
   
+    preload(): void {
+      this.load.image('logo','assets/logo.png')
+    }
+  
     create(): void {
-     
+     this.add.image(400,300,'logo');
     }
   
     update(): void {

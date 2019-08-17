@@ -3,18 +3,20 @@ import scenes from './scenes';
 
 const config: Phaser.Types.Core.GameConfig = {
   title: "Phaser3 Typescript BoilerPlate",
-  width: window.innerWidth,
-  height: window.innerHeight,
+  width: 800,
+  height: 600,
   parent: "game",
   scene: scenes,
-  backgroundColor: "#f2f2f2"
+  backgroundColor: "#333"
 };
 
 export class Game extends Phaser.Game {
   constructor(config: Phaser.Types.Core.GameConfig) {
     super(config);
   }
+
 };
 
 export const game = new Game(config);
+
 
